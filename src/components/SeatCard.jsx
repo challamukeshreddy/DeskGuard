@@ -1,21 +1,20 @@
 export default function SeatCard({ seat }) {
-  const colors = {
-    free: "green",
-    occupied: "red",
-    away: "orange"
+
+  const handleClick = () => {
+    alert(
+      `Seat: ${seat.id}\nStatus: ${seat.status}\n\nReservation Successful`
+    );
   };
 
   return (
-    <div
+    <button
+      onClick={handleClick}
       style={{
-        background: colors[seat.status],
-        color: "white",
         padding: "20px",
-        borderRadius: "10px",
-        textAlign: "center"
+        margin: "10px"
       }}
     >
       {seat.id}
-    </div>
+    </button>
   );
 }
