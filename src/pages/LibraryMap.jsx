@@ -3,20 +3,21 @@ import SeatCard from "../components/SeatCard";
 
 export default function LibraryMap() {
   return (
-    <div>
-      <h1>Library Map</h1>
+    <div className="map-container">
 
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(3,1fr)",
-          gap: "20px",
-        }}
-      >
+      <h1 className="map-title">
+        Library Live Seat Map
+      </h1>
+
+      <div className="seat-grid">
         {seats.map((seat) => (
-          <SeatCard key={seat.id} seat={seat} />
+          <SeatCard
+            key={seat.id}
+            seat={seat}
+          />
         ))}
       </div>
+
     </div>
   );
 }

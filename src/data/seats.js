@@ -9,5 +9,9 @@ export const seats = [
 
   { id: "C1", status: "away" },
   { id: "C2", status: "free" },
-  { id: "C3", status: "occupied" }
+  { id: "C3", status: "occupied" },
+
+  { id: "D1", status: "free" },
+  { id: "D2", status: "free" },
+  { id: "D3", status: "occupied" },
 ];

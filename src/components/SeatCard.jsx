@@ -1,20 +1,18 @@
 export default function SeatCard({ seat }) {
-
   const handleClick = () => {
     alert(
-      `Seat: ${seat.id}\nStatus: ${seat.status}\n\nReservation Successful`
+      `Seat ${seat.id}\nStatus: ${seat.status}\n\nReservation Successful`
     );
   };
 
   return (
-    <button
+    <div
       onClick={handleClick}
-      style={{
-        padding: "20px",
-        margin: "10px"
-      }}
+      className={`seat ${seat.status}`}
     >
-      {seat.id}
-    </button>
+      <h2>{seat.id}</h2>
+
+      <p>{seat.status.toUpperCase()}</p>
+    </div>
   );
 }

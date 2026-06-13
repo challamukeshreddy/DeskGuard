@@ -1,17 +1,23 @@
 export default function Home() {
   return (
-    <div>
-      <h1>DeskGuard</h1>
-      <h2>Smart Library Seat Management</h2>
+    <div className="page">
+      <div className="hero">
+        <h1>DeskGuard AI</h1>
 
-      <h3>Features</h3>
-      <ul>
-        <li>Live Seat Map</li>
-        <li>QR Check-In</li>
-        <li>Away Mode</li>
-        <li>Auto Release</li>
-        <li>Admin Dashboard</li>
-      </ul>
+        <h2>Smart Library Seat Booking & Anti-Hoarding System</h2>
+
+        <p>Fair, transparent and efficient seat management for libraries.</p>
+      </div>
+
+      <div className="features">
+        <div className="feature-card">📍 Live Seat Map</div>
+
+        <div className="feature-card">📱 QR Check-In</div>
+
+        <div className="feature-card">⏳ Away Mode</div>
+
+        <div className="feature-card">🤖 AI Insights</div>
+      </div>
     </div>
   );
 }
